@@ -1,0 +1,90 @@
+:root{
+    --dark: #1E1E1E;
+    --light: #CCCCCC;
+    --intense-grey: #2D2D2D;
+    --light-grey: #3C3C3C;
+    --medium-grey: #282828;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--dark);
+}
+
+body h1{
+    color: var(--light);
+}
+
+#game_board{
+    width: 400px;
+    height: 400px;
+    border: 10px solid var(--intense-grey);
+    background-color: var(--light-grey);
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#game_board div{
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--medium-grey);
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile-clicked{
+    background: var(--light);
+}
+
+.x1{
+    color: #1E1E83;
+}
+
+.x2{
+    color: #7E8900;
+}
+
+.x3{
+    color: #7E1E1E;
+}
+
+.x4{
+    color: #212E5B;
+}
+
+.x5{
+    color: #37321A;
+}
+
+.x6{
+    color: #36A3F0;
+}
+
+.x7{
+    color: #1E3549
+}
+
+.x8{
+    color: #5C606A;
+}
+
+#flag_button{
+    width: 100px;
+    height: 70px;
+    font-size: 1.5rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: var(--light);
+}
+
+#flag_button:hover{
+    background-color: #4ef025;
+    cursor: pointer;
+}
